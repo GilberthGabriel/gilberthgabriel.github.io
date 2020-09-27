@@ -1,0 +1,101 @@
+html {
+    scroll-behavior: smooth;
+}
+header {
+    padding: 2%;
+    text-align: center;
+}
+
+.display-3 {
+    color: white;
+}
+
+body {
+    background-image: url('assets/pexels-luis-gomes-546819.jpg');
+}
+
+#cards_container {
+    padding: 0 15%;
+}
+
+.row {
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.card_certificado .card{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(6px);
+    transition: all 0.3s;
+    border-radius: 0.5rem !important;
+    color: white
+}
+
+.card-img-top {
+    height: 285.5px !important;
+}
+.card_certificado .card:hover {
+    transform: translateY(-10px);
+}
+.premiado{
+    position: relative;
+}
+.premiado::after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    right: -10%;
+    top: -5%;
+    background: url('assets/medalha.png') no-repeat;
+    background-size: contain;
+}
+
+.btn {
+    background-color: #8A56D8 !important;
+    border: none !important;
+}
+.btn:hover {
+    background-color: #5D29A9 !important;
+}
+
+@media(max-width: 1270px) {
+    #cards_container {
+        padding: 0 5%;
+    }
+}
+
+@media(max-width: 1006px) {
+    #cards_container {
+        padding: 0 2%;
+    }
+}
+
+@media(max-width: 930px) {
+    #cards_container {
+        padding: 0;
+    }
+}
+
+@media(max-width: 899px) {
+    .row {
+        justify-content: center;
+        margin: 0;
+    }
+    .card_certificado .card {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media(max-width: 541px) {
+    
+    .card_certificado .card {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .display-3 {
+        margin-bottom: 1rem;
+    }
+}
